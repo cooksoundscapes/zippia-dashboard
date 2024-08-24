@@ -11,14 +11,15 @@
     white-space: pre-wrap;
     position: fixed;
     width: 40vw;
-    height: 45vh;
+    height: 64vh;
     background: #fafafa;
     left: 50%;
-    top: 15vh;
+    top: 12vh;
     transform: translate(-50%, 0);
-    padding: 8px;
+    padding: 24px;
     border-radius: 8px;
     overflow: auto;
+    line-height: 2em;
 }
 
 .closeButton {

@@ -84,7 +84,7 @@ export default function Home() {
                     value={searchValue}
                     onChange={(e) => setSearchValue(e.target.value)}
                 />
-                <button onClick={() => setFirstFetch(true)}>Get Users List</button>
+                <button onClick={() => setFirstFetch(true)}>Fetch Users</button>
             </div>
             <UserTable userData={filteredOutput} sortBy={sortBy} selectDetails={selectDetails} />
             <Paginator

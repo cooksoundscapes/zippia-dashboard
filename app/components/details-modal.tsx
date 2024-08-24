@@ -6,16 +6,15 @@ type DetailsModalProps = UserData & { onClose: () => void }
 
 export default function DetailsModal({ onClose, ...props}: DetailsModalProps) {
     const content = useMemo(() => {
-        function objectToText(obj: object, indent = 0) {
+        function objectToText(obj: object) {
             let text = '';
-            const padding = ' '.repeat(indent);
         
             for (const [key, value] of Object.entries(obj)) {
                 if (typeof value === 'object' && value !== null) {
-                    text += `${padding}${key}:\n`;
-                    text += objectToText(value, indent + 2); // Recursively handle nested objects
+                    text += `${key}:\n`;
+                    text += objectToText(value); // Recursively handle nested objects
                 } else if (value !== null) {
-                    text += `${padding}${key}: ${value}\n`;
+                    text += `${key}: ${value}\n`;
                 }
             }
         

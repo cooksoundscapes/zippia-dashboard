@@ -2,6 +2,7 @@
     border-collapse: collapse;
     min-width: 100%;
     border-spacing: 0;
+    table-layout: fixed;
 }
 
 .tableBody th {
@@ -9,6 +10,7 @@
     background: black;
     color: white;
     cursor: default;
+    width: 150px
 }
 
 .header {
@@ -38,6 +40,7 @@
 .trow td {
     padding: 2px 8px;
     background: #fafafa;
+    width: 150px
 }
 
 .tbody .trow:last-child {
