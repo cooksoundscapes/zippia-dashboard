@@ -1,0 +1,25 @@
+
+.paginator select {
+    max-width: 4em;
+    font-size: large;
+    margin-right: 2em;
+    cursor: default;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.buttonContainer {
+    display: inline-block;
+}
+
+.buttonContainer button {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.buttonContainer button:last-child {
+    margin-left: auto;
+}

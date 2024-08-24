@@ -1,0 +1,27 @@
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #42424242;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modalBody {
+    white-space: pre-wrap;
+    position: fixed;
+    width: 40vw;
+    height: 45vh;
+    background: #fafafa;
+    left: 50%;
+    top: 15vh;
+    transform: translate(-50%, 0);
+    padding: 8px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.closeButton {
+    display: block;
+    margin-left: auto;
+}

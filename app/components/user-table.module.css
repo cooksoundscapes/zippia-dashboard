@@ -1,0 +1,45 @@
+.tableBody {
+    border-collapse: collapse;
+    min-width: 100%;
+    border-spacing: 0;
+}
+
+.tableBody th {
+    height: 2.5em;
+    background: black;
+    color: white;
+    cursor: default;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    padding-left: 8px;
+}
+
+.sortingButton {
+    display: block;
+    border: none;
+    background: none;
+    color: white;
+    padding: 2px;
+    line-height: 0.5em;
+    cursor: pointer;
+}
+
+.trow {
+    border-bottom: 1px solid black;
+    line-height: 2em;
+    cursor: pointer;
+}
+
+.trow td {
+    padding: 2px 8px;
+    background: #fafafa;
+}
+
+.tbody .trow:last-child {
+    border: none
+}
