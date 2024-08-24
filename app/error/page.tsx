@@ -1,9 +1,6 @@
 'use client'
 
-import { useSearchParams } from "next/navigation"
-
 export default function ErrorPage() {
-    const params = useSearchParams()
 
     return (
         <div style={{
@@ -14,7 +11,7 @@ export default function ErrorPage() {
             color: '#4e4e4e',
         }}>
             <h2 style={{ color: '#ff474c'}}>Warning:</h2>
-            <h2>{params.get('msg')}</h2>
+            <h2>An Error has occurred while fetching the users data.</h2>
         </div>
     )
 }

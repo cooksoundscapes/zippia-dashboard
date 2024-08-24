@@ -19,12 +19,12 @@ export default function useQuery<T>(): [(url: string) => void, QueryState<T>] {
         fetch(url)
             .then(res => {
                 if (!res.ok) {
-                    throw new Error('An Error has occurred while fetching the users data.')
+                    throw new Error()
                 }
                 return res.json()
             })
             .then(json => setState({ result: json, isFetching: false }))
-            .catch(err => router.push(`/error?msg=${encodeURIComponent(err.message)}`))
+            .catch(err => router.push(`/error`))
     }, [router, state.isFetching])
 
     return [trigger, state]
